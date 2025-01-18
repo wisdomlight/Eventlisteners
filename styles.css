@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*below is centering the .main with adding display: flex to the .main parent element(body)
+and centering it via justify-content and align-items both on center*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* gap: 10px; */
+    background-color: lightcyan;
+    height: 10vh;
+}
+.header h1 {
+    /* align-self: flex-start; */
+    /* margin-top: auto; */
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* gap: 5px; */
+    background-color: red;
+}
+ul li {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    /* padding: 80px 0; */
+    width: 50%;
+    height: 50%;
+    background-color: lightblue;
+}
+/*below is centering the .main with 
+position fixed top left 50% and transform: translate(-50%, -50%)*/
+/* .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+    height: 40vh;;
+    background-color: beige;
+} */
+
+.div1, .div2, .div3 {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 20%;
+    height:20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: palevioletred;
+}
